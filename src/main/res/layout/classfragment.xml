@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <com.example.administrator.myapplication.title.TitleActivity
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#caccc8"
+        android:id="@+id/ta"></com.example.administrator.myapplication.title.TitleActivity>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:id="@+id/rvleft"></android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/img"/>
+            <ExpandableListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/elv"></ExpandableListView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

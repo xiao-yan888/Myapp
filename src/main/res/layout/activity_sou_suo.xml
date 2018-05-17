@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.myapplication.title.sousuo.SouSuoActivity">
+    <com.example.administrator.myapplication.title.sousuo.MyView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mv"
+        app:tv_color="#f00"
+        android:layout_marginBottom="20dp">
+
+    </com.example.administrator.myapplication.title.sousuo.MyView>
+    <com.example.administrator.myapplication.title.sousuo.MyViewGroup
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/mvg"
+        >
+
+    </com.example.administrator.myapplication.title.sousuo.MyViewGroup>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv"></ListView>
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/del"
+        android:text="清空历史记录"
+        android:background="#fff"
+        android:layout_gravity="center_horizontal"/>
+
+
+</LinearLayout>

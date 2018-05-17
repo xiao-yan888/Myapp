@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+<com.example.administrator.myapplication.title.TitleActivity
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="#f12"
+    android:id="@+id/ta"></com.example.administrator.myapplication.title.TitleActivity>
+    <!--轮播图开始-->
+   <com.youth.banner.Banner
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/banner"
+        ></com.youth.banner.Banner>
+    <!--轮播图结束-->
+<!--分类开始-->
+   <android.support.v7.widget.RecyclerView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/rv_class"
+       ></android.support.v7.widget.RecyclerView>
+<!--分类结束-->
+<!--跑马灯效果开始-->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:orientation="horizontal"
+       android:gravity="center_vertical"
+       android:background="@drawable/shape_search">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="京东快报"
+          />
+      <com.sunfusheng.marqueeview.MarqueeView
+          android:id="@+id/marqueeView"
+          android:layout_width="350dp"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="15dp"
+
+          app:mvAnimDuration="1000"
+          app:mvDirection="bottom_to_top"
+          app:mvInterval="3000"
+          app:mvSingleLine="true"
+          app:mvTextColor="#000000"
+          app:mvTextSize="14sp"/>
+      <View
+          android:layout_width="1dp"
+          android:layout_height="20dp"
+          android:background="#000000"></View>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="更多"
+          android:layout_marginLeft="10dp"/>
+   </LinearLayout>
+
+<!--跑马灯效果结束-->
+
+   <android.support.v7.widget.RecyclerView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/rv_miaosha"
+       ></android.support.v7.widget.RecyclerView>
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:background="#33000000"
+       android:gravity="center"
+       android:text="为您推荐"/>
+
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/rv_tiujian"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+   </android.support.v7.widget.RecyclerView>
+
+   </LinearLayout>
+
+</ScrollView>

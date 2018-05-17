@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
+<ImageView
+    android:id="@+id/erweima"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_marginLeft="15dp"
+    android:background="@drawable/a_s"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/llsuo"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/shape_search"></LinearLayout>
+
+    <ImageView
+        android:id="@+id/fenxiang"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/my_msg_bai"/>
+</LinearLayout>
