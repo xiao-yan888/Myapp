@@ -51,7 +51,7 @@ public class LoginApi {
         return loginApiService.getProducts(pscid);
     }
 
-    public Observable<BaseBean> addCart(String uid, String pid, String token){
+   /* public Observable<BaseBean> addCart(String uid, String pid, String token){
         return loginApiService.addCart(uid,pid,token);
-    }
+    }*/
 }

@@ -1,5 +1,6 @@
 package com.example.administrator.myapplication.title.sousuo;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.administrator.myapplication.R;
+import com.example.administrator.myapplication.title.sousuo.xiangqing.SearchActivity;
 
 import java.util.List;
 
@@ -48,6 +50,9 @@ public class SouSuoActivity extends AppCompatActivity {
                 ArrayAdapter arrayAdapter = new ArrayAdapter(SouSuoActivity.this,android.R.layout.simple_list_item_1,select);
                 lv.setAdapter(arrayAdapter);
 
+                Intent intent = new Intent(SouSuoActivity.this, SearchActivity.class);
+                intent.putExtra("keywords",et_shop);
+                startActivity(intent);
 
             }
         });

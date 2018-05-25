@@ -12,6 +12,8 @@ import com.example.administrator.myapplication.bean.UserBean;
 public interface LoginContract {
     interface view extends BaseContract.BaseView{
         void loginSuccess(UserBean userBean);
+        String getName();
+        String getPass();
     }
     interface presenter extends BaseContract.BasePresenter<view> {
         void login(String mobile, String password);

@@ -22,7 +22,9 @@ public abstract class BaseActivity<T extends BaseContract.BasePresenter> extends
         super.onCreate(savedInstanceState);
         setContentView(getContentLayout());
         inject();
-        mPresenter.attchView(this);
+        if (mPresenter != null) {
+            mPresenter.attchView(this);
+        }
     }
     @Override
     public void initView(View view) {
@@ -32,7 +34,9 @@ public abstract class BaseActivity<T extends BaseContract.BasePresenter> extends
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        mPresenter.detachView();
+        if (mPresenter != null) {
+            mPresenter.detachView();
+        }
     }
 
     @Override

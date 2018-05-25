@@ -45,7 +45,7 @@ public class HomeFragment extends BaseFragment<HomePresenter> implements HomCont
     private RecyclerView rv_miaosha;
     private RecyclerView rv_tiujian;
     private TitleActivity ta;
-    private static final  int ONE=1;
+    public static final  int ONE=1;
     /* @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

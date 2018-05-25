@@ -42,7 +42,7 @@ public interface LoginApiService {
     @POST("product/getProducts")
     Observable<DetailsBean> getProducts(@Field("pscid") String pscid);
 
-    @FormUrlEncoded
+   /* @FormUrlEncoded
     @POST("product/addCart")
-    Observable<BaseBean> addCart(@Field("uid")String uid,@Field("pid")String pid,@Field("token")String token);
+    Observable<BaseBean> addCart(@Field("uid")String uid,@Field("pid")String pid,@Field("token")String token);*/
 }

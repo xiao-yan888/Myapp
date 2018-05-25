@@ -8,7 +8,7 @@ import com.example.administrator.myapplication.fragment.CarFragment;
 import com.example.administrator.myapplication.fragment.classtwo.ClassFragment;
 import com.example.administrator.myapplication.fragment.FindFragment;
 import com.example.administrator.myapplication.fragment.home.HomeFragment;
-import com.example.administrator.myapplication.fragment.MainFragment;
+import com.example.administrator.myapplication.fragment.my.MainFragment;
 import com.hjm.bottomtabbar.BottomTabBar;
 
 public class MainActivity extends AppCompatActivity {

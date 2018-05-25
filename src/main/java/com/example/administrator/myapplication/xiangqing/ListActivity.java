@@ -21,7 +21,7 @@ public class ListActivity extends BaseActivity<DetailPresenter> implements Detai
     private XRecyclerView mXrv;
     private boolean isRefresh = true;
     private RvDetailsAdapter adapter;
-    private static final  int TWO=0;
+    public static final  int TWO=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

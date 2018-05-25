@@ -24,7 +24,9 @@ public abstract class BaseFragment<T extends BaseContract.BasePresenter> extends
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         inject();
-        mPresenter.attchView(this);
+        if (mPresenter != null) {
+            mPresenter.attchView(this);
+        }
     }
 
     @Nullable
@@ -38,7 +40,9 @@ public abstract class BaseFragment<T extends BaseContract.BasePresenter> extends
     @Override
     public void onDestroy() {
         super.onDestroy();
-        mPresenter.detachView();
+        if (mPresenter != null) {
+            mPresenter.detachView();
+        }
     }
 
     @Override

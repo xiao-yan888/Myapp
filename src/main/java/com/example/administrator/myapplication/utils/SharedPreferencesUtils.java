@@ -76,4 +76,9 @@ public class SharedPreferencesUtils {
 		
 		return null;
 	}
+
+	public static void clear(Context context){
+		SharedPreferences sp = context.getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE);
+		sp.edit().clear().commit();
+	}
 }

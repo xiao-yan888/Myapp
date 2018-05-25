@@ -3,6 +3,7 @@ package com.example.administrator.myapplication.shangpinxiangqing;
 import com.example.administrator.myapplication.base.BasePresenter;
 import com.example.administrator.myapplication.bean.BaseBean;
 import com.example.administrator.myapplication.net.LoginApi;
+import com.example.administrator.myapplication.net.ProjectApi;
 
 import javax.inject.Inject;
 
@@ -17,15 +18,15 @@ import io.reactivex.schedulers.Schedulers;
 
 public class AddCarPresenter extends BasePresenter<AddCarContract.View> implements AddCarContract.Presenter {
 
-    LoginApi loginApi;
+    ProjectApi projectApi;
     @Inject
-    public AddCarPresenter(LoginApi loginApi) {
-        this.loginApi=loginApi;
+    public AddCarPresenter(ProjectApi projectApi) {
+        this.projectApi=projectApi;
     }
 
     @Override
     public void addCart(String uid, String pid, String token) {
-        loginApi.addCart(uid,pid,token)
+        projectApi.addCart(uid,pid,token)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribeOn(Schedulers.io())
                 .subscribe(new Observer<BaseBean>() {

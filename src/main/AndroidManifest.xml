@@ -71,13 +71,37 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1106856414" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity android:name=".login.LoginActivity" />
         <activity android:name=".reg.RegActivity" />
         <activity android:name=".WebActivity" />
         <activity android:name=".xiangqing.ListActivity" />
         <activity android:name=".shangpinxiangqing.DetailsActivity" />
         <activity android:name=".title.sousuo.SouSuoActivity" />
-        <activity android:name=".shangpinxiangqing.BigImageActivity"></activity>
+        <activity android:name=".shangpinxiangqing.BigImageActivity" />
+        <activity android:name=".shopcar.ShopCartActivity" />
+        <activity android:name=".order.OrderActivity" />
+        <activity android:name=".order.addr.AddNewAddrActivity" />
+        <activity android:name=".fragment.my.UserInfoActivity" />
+        <activity android:name=".title.sousuo.xiangqing.SearchActivity" />
+        <activity android:name=".fragment.my.myorder.OrderListActivity"></activity>
     </application>
 
 </manifest>
